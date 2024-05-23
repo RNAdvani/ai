@@ -9,9 +9,7 @@ import { FaArrowRight as ArrowRightIcon } from 'react-icons/fa'
 import Graph, { GraphData } from '@/components/Chart'
 import { CardContent } from '@/components/ui/card'
 import { CardWithForm } from '@/components/Card'
-import Image from 'next/image'
-import SmoothScrolling from '@/components/SmoothScrolling'
-import useLenis from '@/components/SmoothScrolling'
+
 
 
 const page = () => {
@@ -29,7 +27,7 @@ const page = () => {
     <section className="flex flex-col h-full max-h-screen]"> 
       <BackgroundBeams className='-z-[5]' />
       <div className="display-format">
-          <div className="w-full justify-around py-6 flex md:p-16 flex-col min-h-[40vh] gap-10 items-center md:justify-end md:h-full">
+          <div className="w-full justify-around flex md:p-16 flex-col min-h-[40vh] gap-10 items-center md:justify-end md:h-full">
             <div className='w-full text-3xl text-center font-semibold md:min-h-[40vh] md:text-start flex flex-col gap-6 md:gap-0'>
               <h1 className=" md:block  scroll-m-20 text-5xl text-center md:text-start w-full font-extrabold tracking-tight lg:text-7xl">
                   Ravian.Ai
