@@ -86,7 +86,7 @@ const AiVisualizer: React.FC = () => {
         };
     }, []);
 
-    return <div ref={mountRef} className='p-0 md:h-[600px] h-[500px] ' style={{ width: '100%', backgroundColor: 'transparent' }} />;
+    return <div ref={mountRef} className='p-0 md:h-[600px] h-[400px] ' style={{ width: '100%', backgroundColor: 'transparent' }} />;
 };
 
 export default   memo(AiVisualizer);
