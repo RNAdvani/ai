@@ -25,7 +25,7 @@ const page = () => {
   return (
 
 
-  <div className="flex flex-col w-full h-full mt-20">
+  <div className="flex flex-col w-full h-full md:mt-20 mt-8">
     <section className="flex flex-col h-full max-h-screen]"> 
       <BackgroundBeams className='-z-[5]' />
       <div className="display-format">
