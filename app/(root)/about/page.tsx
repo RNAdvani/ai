@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <div className='min-h-screen '>
-      <div className="mt-[10rem] flex flex-col gap-10 px-[3rem]">
+      {/* <div className="mt-[10rem] flex flex-col gap-10 px-[3rem]">
       <h1 className='text-2xl font-extrabold' >
       At RAVIAN, we are dedicated to transforming the landscape of data analytics through innovation and cutting-edge technology.
       </h1>
@@ -18,7 +18,7 @@ Whether you're uncovering hidden patterns, predicting future trends, or optimizi
 Join us on this journey as we continue to push the boundaries of what's possible in the realm of data analytics <br />
 Welcome to RAVIAN AI - where innovation meets intelligence.
       </p>
-      </div>
+      </div> */}
     </div>
   )
 }
