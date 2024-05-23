@@ -30,4 +30,22 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .wrapper {
+    @apply max-w-7xl lg:mx-auto p-5 md:px-10 xl:px-0 w-full;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .display-format{
+    @apply md:grid md:grid-cols-2 flex flex-col-reverse h-full px-4 md:p-0
+  }
+
 }
+
+  
