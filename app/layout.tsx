@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
+import {
+  ClerkProvider,
+} from '@clerk/nextjs'
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({ subsets: ['latin'],weight:['400','500'],variable:"--font-poppins" });
@@ -19,8 +22,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider >
     <html lang="en" >
       <body className={`${poppins.variable} scroll-smooth`}>{children}</body>
     </html>
+    </ClerkProvider>
   );
 }

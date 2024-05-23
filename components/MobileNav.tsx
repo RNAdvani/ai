@@ -9,6 +9,7 @@ import {
     SheetTrigger,
   } from "@/components/ui/sheet"
 import { headerLinks } from "@/constants"
+import { UserButton } from "@clerk/nextjs";
 import { MenuIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -19,6 +20,7 @@ const MobileNav = () => {
     <Sheet>
   <SheetTrigger><MenuIcon /></SheetTrigger>
   <SheetContent className="border-0 bg-[#ffffff11]">
+    <UserButton />
     <SheetClose asChild>
     <nav className='md:flex-between mt-10 px-4 w-full flex flex-col items-start  gap-5 md:flex-row'>
                {

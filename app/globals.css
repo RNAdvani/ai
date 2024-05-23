@@ -26,6 +26,51 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+
+.footer {
+  /* Footer styles here */
+  background-color: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  /* Content styles here */
+  display: flex;
+  align-items: center;
+}
+
+.contact {
+  /* Contact link styles here */
+  margin-left: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.legal {
+  /* Legal links styles here */
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.legal a {
+  /* Legal link styles here */
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+
+.scrolledUp {
+  background-color: rgba(66, 66, 66, 0.173);
+  backdrop-filter: blur(1);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
