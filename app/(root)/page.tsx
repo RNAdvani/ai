@@ -82,7 +82,7 @@ const page = () => {
     <section className="flex max-md:mt-10 flex-col w-full min-h-screen p-10">
       <div className="flex flex-col-reverse md:flex-row h-full  max-md:justify-start">
           <div className="flex flex-col-reverse  justify-center  items-center h-full md:flex-row w-full px-2 md:p-8 md:justify-start gap-4 md:w-[90%]">
-              <div  className='flex flex-col h-full justify-center items-center w-full md:items-end  px-4'>
+              <div  className='flex flex-col h-full justify-center md:text-end items-center w-full md:items-end px-4'>
               <Reveal direction='right' key={"heading1"} delay={0.25} >
                 <h2 className="scroll-m-20 w-full  md:pb-2 text-3xl font-semibold tracking-tight first:mt-0">
                   Gen AI
