@@ -24,7 +24,7 @@ export function CardWithForm({children,title,description}:{title:string,descript
         <CardTitle className="max-md:text-center">{title}</CardTitle>
         <CardDescription  className="max-md:text-center">{description}</CardDescription>
       </CardHeader>
-      <CardContent className="min-h-[30vh] p-0 w-full">
+      <CardContent className="min-h-[30vh]  p-0 w-full">
         {children}
       </CardContent>
       {/* <CardFooter className="flex justify-between">

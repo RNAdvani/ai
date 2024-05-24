@@ -26,10 +26,10 @@ const page = () => {
   return (
 
 
-  <div className="flex flex-col w-full h-full md:mt-20 mt-8">
+  <div className="flex flex-col w-full h-full md:mt-20">
     <section className="flex flex-col h-full max-h-screen]"> 
       <BackgroundBeams className='-z-[5]' />
-      <div className="display-format">
+      <div className="display-format max-md:justify-end">
           <div className="w-full justify-around flex md:p-16 flex-col min-h-[40vh] gap-10 items-center md:justify-end md:h-full">
             <div className='w-full text-3xl text-center font-semibold md:min-h-[40vh] md:text-start flex flex-col gap-6 md:gap-0'>
               <h1 className=" md:block  scroll-m-20 text-5xl text-center md:text-start w-full font-extrabold tracking-tight lg:text-7xl">
@@ -38,21 +38,21 @@ const page = () => {
               <TextGenerateEffect className='text-xl'  words={`Turn Data in Descisions with our AI Data Scientist`} />
             </div>
             <div className="flex justify-center w-full">
+                       <Link href="/sign-in" className='w-full'>
                     <Button className='flex gap-2 duration-300 w-full md:hidden text-black  hover:border-[#f0f0f0] bg-[#f0f0f0] rounded-full hover:text-[#f0f0f0] hover:bg-black' >
-                       <Link href="/sign-in">
                        <span className=''>Get Started</span><ArrowRightIcon />
-                       </Link>
                     </Button>
+                       </Link>
             </div>
           </div>
-          <div className="w-full flex flex-col justify-center items-center h-full">
+          <div className="w-full flex flex-col md:justify-center items-center justify-end">
                 <DataDrivenAnimation />
           </div>
       </div>
     </section>
 
-    <section className="flex flex-col w-full min-h-[70vh]">
-      <div className="flex flex-col md:flex-row h-full justify-end py-10">
+    <section className="flex flex-col w-full min-h-[70vh] p-10 ">
+      <div className="flex flex-col md:flex-row h-full justify-end">
           <div className="flex flex-col justify-center items-center h-full md:flex-row w-full px-2 md:p-8 md:justify-start gap-8 md:w-[90%]">
               <div >
                   <Slide direction='left'>
@@ -79,12 +79,12 @@ const page = () => {
       </div>
     </section>
 
-    <section className="flex max-md:mt-10 flex-col w-full min-h-[70vh] mb-10">
-      <div className="flex flex-col-reverse md:flex-row h-full justify-start">
-          <div className="flex flex-col-reverse  justify-center  items-center h-full md:flex-row w-full px-2 md:p-8 md:justify-start gap-8 md:w-[90%]">
-              <div  className='flex flex-col h-full justify-center w-full items-end  px-4'>
+    <section className="flex max-md:mt-10 flex-col w-full min-h-screen p-10">
+      <div className="flex flex-col-reverse md:flex-row h-full  max-md:justify-start">
+          <div className="flex flex-col-reverse  justify-center  items-center h-full md:flex-row w-full px-2 md:p-8 md:justify-start gap-4 md:w-[90%]">
+              <div  className='flex flex-col h-full justify-center items-center w-full md:items-end  px-4'>
               <Reveal direction='right' key={"heading1"} delay={0.25} >
-                <h2 className="scroll-m-20 w-full  pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+                <h2 className="scroll-m-20 w-full  md:pb-2 text-3xl font-semibold tracking-tight first:mt-0">
                   Gen AI
                 </h2>
               </Reveal>
@@ -93,11 +93,11 @@ const page = () => {
               Gen AI Technology: Our platform features Gen AI technology, which allows users to generate custom AI models with ease, unleashing their creativity and innovation in data science projects.ke tax.
               </p>
               </Reveal>
-              </div>
-              <div >
+            </div>
+              <div className='max-md:mt-10'>
                   <Slide direction='right'>
                      <CardWithForm title='Gen Ai' description='Generate Anything'  >
-                     <div className='flex w-full justify-center h-full items-center px-2 py-6'>
+                     <div className='flex w-full justify-center h-full items-center px-2 md:py-6 max-md:px-10'>
                         <PlaceholdersAndVanishInput  onChange={()=>{}}  onSubmit={()=>{}} placeholders={["Turn My Idea Into reality","Vanish my problems"]}/>
                      </div>
                      </CardWithForm>
